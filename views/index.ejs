@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Resmi - Teknik AI Angkatan 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar dengan Logo Universitas -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo & Nama Web -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <img src="/images/logo-univ.png" alt="Logo UMY" style="height: 40px; width: auto;">
+    <span class="fw-bold ms-2">Teknik AI #1</span>
+</a>
+        </a>
+
+        <!-- Status User & Tombol Logout -->
+        <div class="d-flex align-items-center">
+            <span class="text-light me-3">Halo, <strong><%= user %></strong>!</span>
+            <a href="/logout" class="btn btn-outline-danger btn-sm">
+                <i class="bi bi-box-arrow-right"></i> Logout
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Header Section -->
+    <div class="bg-primary text-white text-center py-5 shadow-sm mb-4">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Selamat Datang di Portal Teknik AI Universitas Muhammadiyah Yogyakarta</h1>
+            <p class="lead">Pusat Informasi & Kegiatan Angkatan Pertama Teknik Artificial Intelligence</p>
+            <span class="badge bg-warning text-dark fs-6">Angkatan Perdana</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        
+        <!-- Section: Apa itu AI -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-primary"><i class="bi bi-robot me-2"></i>Apa Itu Artificial Intelligence (AI)?</h3>
+                        <p class="card-text text-secondary">
+                            Artificial Intelligence (Kecerdasan Buatan) adalah bidang ilmu komputer yang berfokus pada pembuatan sistem cerdas yang mampu meniru pola pikir, analisis, serta pemecahan masalah layaknya manusia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Pembelajaran AI -->
+        <h3 class="mb-3 text-dark"><i class="bi bi-book-half me-2"></i>Materi Pembelajaran Utama</h3>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-success"><i class="bi bi-diagram-3 me-2"></i>Machine Learning</h5>
+                        <p class="card-text text-muted">Mempelajari algoritma pembelajaran dari data seperti Supervised, Unsupervised, dan Reinforcement Learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-info"><i class="bi bi-activity me-2"></i>Deep Learning</h5>
+                        <p class="card-text text-muted">Eksplorasi Jaringan Saraf Tiruan (Neural Networks) untuk pengenalan pola tingkat tinggi dan big data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning"><i class="bi bi-eye me-2"></i>Computer Vision & NLP</h5>
+                        <p class="card-text text-muted">Pemrosesan citra digital, pengenalan wajah, serta pengolahan bahasa alami (Natural Language Processing).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Kegiatan Mahasiswa -->
+        <h3 class="mb-3 text-dark"><i class="bi bi-calendar-event me-2"></i>Kegiatan Angkatan Pertama</h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="list-group shadow-sm border-0">
+                    <div class="list-group-item p-3">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 text-primary">Pengenalan Artificial Intelligence</h5>
+                            <small class="text-muted">Semester 1</small>
+                        </div>
+                        <p class="mb-1 text-secondary">Teori Bilangan, Matematika diskrit, DTI, Pemdas, Perancangan Basis data, Etika profesi, Bahasa Indonesia, Agama.</p>
+                    </div>
+                    <div class="list-group-item p-3">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 text-primary">Study Group Algoritma & Matematika AI</h5>
+                            <small class="text-muted">Rutin Mingguan</small>
+                        </div>
+                        <p class="mb-1 text-secondary">Diskusi bersama mengenai Kalkulus, Aljabar Linear, dan Probabilitas untuk dasar Machine Learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
